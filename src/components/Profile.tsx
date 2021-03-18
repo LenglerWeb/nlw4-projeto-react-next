@@ -6,7 +6,10 @@ export function Profile() {
             <img src="https://github.com/LenglerWeb.png" alt="Lengler Web"/>
             <div>
                 <strong>Lengler Web</strong>
-                <p>Level 1</p>
+                <p>
+                    <img src="icons/level.svg" alt=""/>
+                    Level 1
+                </p>
             </div>
         </div>
     );
