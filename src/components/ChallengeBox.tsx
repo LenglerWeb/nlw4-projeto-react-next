@@ -1,8 +1,16 @@
-import styles from '../styles/components/ChallengeBox.module.css'
+import { useContext } from 'react';
+import { ChallengesContext } from '../contexts/ChallengesContext';
+
+import styles from '../styles/components/ChallengeBox.module.css';
+
+
 
 const hasActiveChallenge = true;
 
 export function ChallengeBox() {
+    const contextData = useContext(ChallengesContext);
+    console.log(contextData)
+
     return(
         <div className={styles.challengeBoxContainer}>
             { hasActiveChallenge ? (
@@ -19,7 +27,6 @@ export function ChallengeBox() {
                         <button 
                             type="button"
                             className={styles.challengeFailedButton}
-                        
                         >
                             Falhei
                         </button>
